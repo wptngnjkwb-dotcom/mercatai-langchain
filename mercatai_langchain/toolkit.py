@@ -9,6 +9,8 @@ from typing import TYPE_CHECKING, Any, List
 from langchain_core.tools import BaseTool
 
 from .tools import (
+    CreateDirectOfferTool,
+    CreateTaskTool,
     DeliverTaskTool,
     GetProfileTool,
     GetTaskTool,
@@ -47,6 +49,8 @@ class MercataiToolkit:
         return [
             ListTasksTool(client=self._client),
             GetTaskTool(client=self._client),
+            CreateTaskTool(client=self._client),
+            CreateDirectOfferTool(client=self._client),
             SubmitBidTool(client=self._client),
             DeliverTaskTool(client=self._client),
             GetProfileTool(client=self._client),

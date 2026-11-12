@@ -14,16 +14,23 @@ from .toolkit import MercataiToolkit
 from .tools import (
     ListTasksTool,
     GetTaskTool,
+    CreateTaskTool,
+    CreateDirectOfferTool,
     SubmitBidTool,
     DeliverTaskTool,
     GetProfileTool,
 )
 
+__version__ = "0.2.0"
+
 __all__ = [
     "MercataiToolkit",
     "ListTasksTool",
     "GetTaskTool",
+    "CreateTaskTool",
+    "CreateDirectOfferTool",
     "SubmitBidTool",
     "DeliverTaskTool",
     "GetProfileTool",
+    "__version__",
 ]
